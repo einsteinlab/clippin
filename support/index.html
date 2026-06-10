@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support - ClipPin</title>
+  <meta name="description" content="Support page for ClipPin, a macOS menu bar app for plain text snippets.">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #ffffff;
+      --card: #ffffff;
+      --text: #111827;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --link: #2563eb;
+      --max: 860px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1115;
+        --card: #151821;
+        --text: #f9fafb;
+        --muted: #9ca3af;
+        --border: #2a2f3a;
+        --link: #8ab4ff;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 22px 20px 0;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 15px;
+    }
+
+    .brand img {
+      width: 30px;
+      height: 30px;
+      border-radius: 7px;
+      display: block;
+    }
+
+    main {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 36px 20px 64px;
+    }
+
+    article {
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 38px;
+      background: var(--card);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 38px;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+    }
+
+    .subtitle {
+      margin: 0 0 30px;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    h2 {
+      margin: 30px 0 8px;
+      font-size: 20px;
+      letter-spacing: -0.01em;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ul, ol {
+      margin: 8px 0 0 22px;
+      padding: 0;
+    }
+
+    li {
+      margin: 7px 0;
+    }
+
+    code {
+      padding: 2px 6px;
+      border-radius: 6px;
+      background: rgba(127, 127, 127, 0.12);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.92em;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .contact {
+      margin-top: 18px;
+      padding: 16px 18px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    footer {
+      margin-top: 34px;
+      color: var(--muted);
+      font-size: 14px;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    footer a {
+      color: var(--muted);
+    }
+
+    footer a:hover {
+      color: var(--text);
+    }
+
+    @media (max-width: 640px) {
+      header { padding: 16px 14px 0; }
+      main { padding: 28px 14px 48px; }
+      article { padding: 24px; }
+      h1 { font-size: 31px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="brand" href="../">
+      <img src="../assets/app-icon.png" alt="ClipPin">
+      <span>ClipPin</span>
+    </a>
+  </header>
+
+  <main>
+    <article>
+      <h1>Support</h1>
+      <p class="subtitle">Help and contact information for ClipPin.</p>
+
+      <h2>About ClipPin</h2>
+      <p>
+        ClipPin is a minimal macOS menu bar app for saving and copying frequently used plain text snippets.
+        It is designed for local, offline use.
+      </p>
+
+      <h2>Basic Usage</h2>
+      <ol>
+        <li>Open ClipPin from the macOS menu bar.</li>
+        <li>Choose <code>Add New Snippet</code> to save a plain text snippet.</li>
+        <li>Select a saved snippet from the menu to copy it to the clipboard.</li>
+        <li>Use <code>Delete Snippet</code> to remove a specific saved item.</li>
+      </ol>
+
+      <h2>Plain Text Only</h2>
+      <p>
+        ClipPin is intended for plain text snippets. It does not save rich text formatting,
+        images, or attachments.
+      </p>
+
+      <h2>Privacy</h2>
+      <p>
+        ClipPin does not collect data, does not require an account, does not use cloud sync,
+        and does not access the network. Text snippets stay on your Mac.
+      </p>
+
+      <h2>Troubleshooting</h2>
+      <ul>
+        <li>If a copied snippet does not appear where expected, try pasting into a plain text editor first.</li>
+        <li>If ClipPin is not visible, check the macOS menu bar area and make sure the app is running.</li>
+        <li>If you need to remove old content, use the delete menu to remove individual snippets.</li>
+      </ul>
+
+      <h2>Contact</h2>
+      <p>
+        For support, feedback, privacy questions, or bug reports, contact:
+      </p>
+
+      <div class="contact">
+        <a href="mailto:loulan@loulan.me">loulan@loulan.me</a>
+      </div>
+
+      <footer>
+        <span>© 2026 ClipPin. All rights reserved.</span>
+        <span><a href="../">Home</a> · <a href="../privacy/">Privacy Policy</a></span>
+      </footer>
+    </article>
+  </main>
+</body>
+</html>
